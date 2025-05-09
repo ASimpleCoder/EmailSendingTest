@@ -4,7 +4,7 @@ import streamlit as st
 sender = smtp.SMTP("smtp.gmail.com", 587)
 sender.ehlo()
 sender.starttls()
-sender.login(st.secrets["email"]["sender"], st.secrets["email"]["apppassword"])
+sender.login(st.secrets["email"]["address"], st.secrets["email"]["apppassword"])
 
 b = st.button("Click Me")
 if b:
