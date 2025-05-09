@@ -1,7 +1,7 @@
 import smtplib as smtp
 import streamlit as st
 
-st.write(st.secrets["email"])
+st.write(dict(st.secrets))
 
 sender = smtp.SMTP("smtp.gmail.com", 587)
 sender.ehlo()
